@@ -13,4 +13,9 @@ class RecordController extends Controller
         $current_user = Auth::user();
         return view('/record', [ 'current_user' => $current_user ]);
     }
+
+    public function create()
+    {
+        // とりあえず一個でもいいから何かcolumn追加
+    }
 }
